@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Home</title>
+   <!-- Link to Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!-- Link to custom CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+   <!-- <link rel="stylesheet" href="style1.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+   <!-- Navigation bar -->
+   <nav class="navbar navbar-inverse" id="nav">
+      <div class="container-fluid">
+         <div class="navbar-header">
+            <a class="navbar-brand" href="/">Assignment</a>
+         </div>
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="/signin"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- Overview section -->
+   <div id="big">
+      <div class="container">
+         <h1>Welcome</h1><br><br>
+         <p><b>Vidyayan Eduventure Private Limited's mission is to leverage technology to provide accessible and
+               affordable education
+               to learners worldwide.</b><br><br>
+            <br>
+            Vidyayan Eduventure Private Limited values innovation, collaboration, and education. Its culture fosters
+            creativity and
+            encourages employees to think critically and explore new ideas. The company also prioritizes work-life
+            balance,
+            providing flexible work arrangements and professional development opportunities to its employees.<br>
+            <br>Vidyayan Eduventure Private Limited is a leading education technology company that values innovation,
+            collaboration, and
+            social responsibility. Its commitment to leveraging technology to provide accessible and affordable
+            education has made
+            it a trusted brand in the education industry.<br>
+         </p>
+      </div>
+      <div id="img_div">
+         <img src="{{ url_for('static', filename='pic.jpg') }}" id="img">
+      </div>
+   </div>
+   <!-- Footer section -->
+   <footer class="container-fluid text-center" id="foot">
+      <div id="about">
+         <p style="color:rgb(37, 37, 37);font-size:2.2rem;">About Us : </p><br>
+         <p>
+            Vidyayan Eduventure Private Limited's mission is to leverage technology to provide accessible and
+            affordable education
+            to learners worldwide.
+         </p>
+      </div>
+      <div id="contact">
+         <p style="color:rgb(37, 37, 37);font-size:2.2rem;">Contact Us : </p><br>
+         <p>Email : username@gmail.com</p><br>
+         <p>Phone : +91 XXXXXXXXXX</p><br>
+      </div>
+      <div id="social">
+         <p style="color:rgb(37, 37, 37);font-size:2.2rem;">Social Media Platforms :</p><br><br>
+         <a href=" #" target="blank"><i class="fa fa-envelope-o"></i></a>
+         <a href="#" target="blank"><i class="fa fa-external-link"></i></a>
+         <a href="#" target="blank"><i class="fa fa-facebook-f"></i></a>
+         <a href="#" target="blank"><i class="fa fa-instagram"></i></a>
+      </div>
+   </footer>
+   <div id="copyright">Copyright © 2022 by Vidyayan Eduventure Private Limited . All rights reserved.</div>
+
+   <!-- Link to Bootstrap JS -->
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>

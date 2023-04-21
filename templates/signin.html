@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Sign In</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+
+<body>
+   <div class="container mt-5">
+      <div class="row">
+         <h1 class="text mb-4">Sign In</h1>
+         <div class="col md-6">
+            {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+            {% endif %}
+            <div id="d1">
+               <div id="img">
+                  <img src="{{ url_for('static', filename='pic.jpg') }}" id="pic">
+               </div>
+               <div>
+                  <form method="post">
+                     <div class="form-group">
+                        <label for="email">Email : </label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="password">Password : </label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                     </div>
+                     <button type="submit" class="btn btn-primary" id="btn"> Sign In </button>
+                     <p class="mt-3">Don't have an account ? <a href="{{ url_for('signup') }}"> Sign up here </a>.</p>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

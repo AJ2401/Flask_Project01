@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
+body {
+   margin: 1rem;
+   padding: 1rem;
+   justify-content: space-between;
+   display: block;
+   background-color: rgba(182, 221, 251, 0.179);
+}
+
+#nav {
+   border-radius: 2.5rem;
+   background-color: rgb(54, 54, 54);
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   width: 70%;
+}
+
+#nav a {
+   font-size: 1.8rem;
+   color: antiquewhite;
+   font-family: 'Poppins';
+}
+
+#nav li a {
+   font-size: 1.5rem;
+}
+
+#big {
+   display: flex;
+   justify-content: space-evenly;
+   margin-left: 5rem;
+   margin-right: 5rem;
+}
+
+.container {
+   width: 50%;
+   font-size: 22px;
+   margin-top: 10rem;
+   margin-right: 5rem;
+}
+
+#img_div {
+   width: 50%;
+   height: 50rem;
+   margin-top: 25%;
+}
+
+#img {
+   width: 100%;
+   height: 50rem;
+   border-radius: 12px;
+}
+
+.container h1 {
+   color: rgb(39, 38, 38);
+   font-size: 5rem;
+   text-align: center;
+}
+
+.container b {
+   font-size: 22px;
+   font-weight: 600;
+   color: black;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+   line-height: 1.5rem;
+}
+
+.container p {
+   font-size: 22px;
+   color: rgb(72, 72, 72);
+   font-family: 'Poppins';
+   line-height: 3rem;
+}
+
+#foot {
+   margin-top: 20%;
+   margin-bottom: 5%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+
+#foot p {
+   color: rgba(77, 78, 78, 0.889);
+   font-size: 22px;
+   font-family: 'Poppins';
+   line-height: 3.5rem;
+}
+
+#social a {
+   color: rgba(77, 78, 78, 0.889);
+   font-size: 32px;
+   line-height: 3.5rem;
+   margin-left: 20px;
+}
+
+#social a:hover {
+   color: rgb(149, 168, 246);
+   font-size: 4.5rem;
+   line-height: 3.8rem;
+   margin-left: 10%;
+   margin-right: - 10%;
+}
+
+#copyright {
+   justify-content: center;
+   text-align: center;
+   margin-top: 13rem;
+   background-color: rgb(62, 62, 62);
+   color: rgba(250, 235, 215, 0.836);
+   width: 100%;
+   height: 5rem;
+   font-size: 18px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 0%;
+   border-radius: 20px;
+   padding: 10px;
+}
+
+#about {
+   width: 30%;
+   height: 30%;
+   margin-left: -5rem;
+   margin-right: 3rem;
+   padding-left: 20px;
+   padding-right: 20px;
+}

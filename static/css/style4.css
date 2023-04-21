@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+   margin: 0px;
+   background-color: rgba(213, 213, 213, 0.829);
+}
+
+#nav {
+   width: 80%;
+   height: 3.5rem;
+   background-color: rgb(2, 49, 91);
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0.5rem;
+   border-radius: 30px;
+   padding: 10px;
+   text-align: center;
+}
+
+#navbarNav li a {
+   color: aliceblue;
+   font-size: 1.4rem;
+   font-family: 'Zilla Slab';
+   font-weight: 100;
+   margin-left: 5rem;
+   margin-right: 5rem;
+   text-align: center;
+   justify-content: space-between;
+}
+
+.navbar-brand {
+   color: aliceblue;
+   font-size: 1.4rem;
+   font-family: 'Zilla Slab';
+   font-weight: 100;
+   margin-left: 5rem;
+   margin-right: 5rem;
+   text-align: center;
+   justify-content: space-between;
+}
+
+.container {
+   display: flex;
+   margin: 0px;
+   padding-top: 2rem;
+   margin-top: 2rem;
+}
+
+#opt {
+   line-height: 4rem;
+   width: 30%;
+}
+
+ul {
+   list-style: none;
+}
+
+.btn {
+   width: 15rem;
+   font-size: 18px;
+   color: rgba(38, 35, 35, 0.822);
+   font-family: 'Sedgwick Ave';
+   background: local;
+   border-radius: 20px;
+   padding: 10px;
+   text-align: justify;
+   justify-content: center;
+}
+
+.btn:hover {
+   list-style: none;
+   font-size: 19px;
+   color: rgba(235, 247, 247, 0.895);
+   font-family: 'Sedgwick Ave';
+   background-color: rgb(2, 65, 120);
+}
+
+#opt i {
+
+   padding-right: 10px;
+}
+
+#d1 {
+   height: 100%;
+   display: block;
+   margin-left: 2rem;
+   margin-top: 2rem;
+   background-color: rgb(244, 247, 246);
+}
+
+#d2 p {
+   text-align: right;
+   width: 40rem;
+}
+
+#d2 {
+   padding-left: 2rem;
+   padding-right: 2rem;
+   padding-top: 2rem;
+   width: 65rem;
+   height: 52rem;
+   font-size: 20px;
+   border-radius: 20px;
+   font-family: 'Alkatra';
+   letter-spacing: 2px;
+   font-weight: 100;
+}
+
+#d3 {
+   margin-left: 2rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   width: 65rem;
+   height: 52rem;
+   font-size: 20px;
+   border-radius: 20px;
+   font-family: 'Alkatra';
+   letter-spacing: 2px;
+   font-weight: 100;
+}
+
+#d3 p {
+   text-align: left;
+   margin-left: 30%;
+   width: 40rem;
+}
+
+#d4 {
+   margin-left: 2rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   width: 65rem;
+   height: 52rem;
+   font-size: 20px;
+   border-radius: 20px;
+   font-family: 'Alkatra';
+   letter-spacing: 2px;
+   font-weight: 100;
+}
+
+#d4 p {
+   text-align: right;
+   width: 40rem;
+}
+
+#copyright {
+   justify-content: center;
+   text-align: center;
+   margin-top: 13rem;
+   background-color: rgb(62, 62, 62);
+   color: rgba(250, 235, 215, 0.836);
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   height: 3rem;
+   font-size: 18px;
+   margin-bottom: 0%;
+   border-radius: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}

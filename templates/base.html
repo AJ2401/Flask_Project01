@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% block title %}{% endblock %}
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.min.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Assignment</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="#">Sign In</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+   {% block content %}{% endblock %}
+
+   <footer class="mt-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <p>Contact us at:</p>
+               <p>Email: myapp@example.com</p>
+               <p>Phone: 555-555-5555</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='fontawesome/js/all.min.js') }}"></script>
+</body>
+
+</html>

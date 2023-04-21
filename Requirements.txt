@@ -1,0 +1,17 @@
+-- Requirements -- 
+
+. The system should be built using Flask framework and Python programming language.
+
+. User data should be stored in a secure manner using a database or file system.
+
+. The user interface should be responsive and user-friendly.
+
+. The system should be able to handle multiple user sessions simultaneously.
+
+. The system should be able to handle errors and provide appropriate error messages to the user.
+
+. The system should be thoroughly tested to ensure functionality and security.
+
+. The system should be deployed to a web server for public access.
+
+. The code should be well-documented and maintainable.

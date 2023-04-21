@@ -1,0 +1,50 @@
+<!-- Sign up page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Sign Up</title>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+
+<body>
+   <div class="container">
+      <h1 class="text mb-4">Sign Up</h1>
+      {% if error %}
+      <div class="alert alert-danger">{{ error }}</div>
+      {% endif %}
+      <div id="d1">
+         <div id="img">
+            <img src="{{ url_for('static', filename='pic.jpg') }}" id="pic">
+         </div>
+         <div>
+            <form method="POST">
+               <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" name="username" required>
+               </div>
+               <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+               </div>
+               <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" required>
+               </div>
+               <div class="form-group">
+                  <label for="contact">Contact Number</label>
+                  <input type="tel" class="form-control" id="contact" name="contact" required>
+               </div>
+               <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+            </form>
+            <p>Already have an account? <a href="{{ url_for('signin') }}">Sign in</a></p>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

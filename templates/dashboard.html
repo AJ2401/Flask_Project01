@@ -1,0 +1,154 @@
+<!-- Dashboard -->
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Dashboard</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg" id="nav">
+      <a class="navbar-brand" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Welcome, {{ username }}</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <div class="container">
+      <div id="opt">
+         <ul>
+            <li><button class="btn"> <i class="fa fa-bars"></i> Dashboard</button></li>
+            <li><button class="btn"> <i class="fas fa-palette"></i> UI Elements</button></li>
+            <li><button class="btn"> <i class="fa fa-cog" aria-hidden="true"></i> Font Elements</button></li>
+            <li><button class="btn"> <i class="fa fa-pie-chart"></i> Charts</button></li>
+            <li><button class="btn"> <i class="fa fa-table" aria-hidden="true"></i> Tables</button></li>
+            <li><button class="btn"> <i class="fa fa-cube"></i> Icons</button></li>
+            <li><button class="btn"> <i class='fas fa-user-circle'></i> User Pages</button></li>
+            <li><button class="btn"> <i class="fa fa-edit"></i> Documentation</button></li>
+         </ul>
+      </div>
+      <div id="d1">
+         <!-- <div class="card"> -->
+         <div class="card-body" id="d2">
+            <p>Sales can occur in a variety of settings, including in-person at a physical store, online through
+               an e-commerce
+               platform, or through a sales representative. The sales process typically involves identifying
+               potential customers,
+               promoting the product or service, negotiating the terms of the sale, and closing the deal.</p>
+            <canvas id="Chart1" style="width:100%;max-width:100rem"></canvas>
+         </div>
+         <div class="card-body" id="d3">
+            <p>Sales can occur in a variety of settings, including in-person at a physical store, online through
+               an e-commerce
+               platform, or through a sales representative. The sales process typically involves identifying
+               potential customers,
+               promoting the product or service, negotiating the terms of the sale, and closing the deal.</p><br><br>
+            <canvas id="Chart2" style="width:100%;max-width:100rem"></canvas>
+         </div>
+         <div class="card-body" id="d4">
+            <p>Sales can occur in a variety of settings, including in-person at a physical store, online through
+               an e-commerce
+               platform, or through a sales representative. The sales process typically involves identifying
+               potential customers,
+               promoting the product or service, negotiating the terms of the sale, and closing the deal.</p><br><br>
+            <canvas id="Chart3" style="width:100%;max-width:100rem"></canvas>
+         </div>
+         <!-- </div> -->
+      </div>
+   </div>
+   <div id="copyright">Copyright © 2022 by Vidyayan Eduventure Private Limited . All rights reserved.</div>
+   <script>
+      var xValues = ["Fintech", "Customer", "Product1", "Product2", "product3"];
+      var yValues = [155, 149, 424, 224, 115];
+      var barColors = [
+         "rgb(85, 162, 162)",
+         "rgb(108, 85, 162)",
+         "rgb(132, 79, 132)",
+         "rgb(87, 86, 87)",
+         "rgb(251, 176, 63)"
+      ];
+
+      new Chart("Chart1", {
+         type: "doughnut",
+         data: {
+            datasets: [{
+               backgroundColor: barColors,
+               data: yValues
+            }]
+         },
+         options: {
+            title: {
+               display: true,
+            }
+         }
+      });
+      new Chart("Chart2", {
+         type: "line",
+         data: {
+            labels: xValues,
+            datasets: [{
+               data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+               borderColor: "rgb(242, 166, 166)",
+               fill: false
+            }, {
+               data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+               borderColor: " rgb(65, 250, 185)",
+               fill: false
+            }, {
+               data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+               borderColor: " rgb(65, 145, 250)",
+               fill: false
+            }]
+         },
+         options: {
+            legend: { display: false }
+         }
+      });
+
+      generateData("x * 2 + 7", 0, 10, 0.5);
+
+      new Chart("Chart3", {
+         type: "line",
+         data: {
+            labels: xValues,
+            datasets: [{
+               fill: false,
+               pointRadius: 1,
+               borderColor: " rgb(234, 14, 186)",
+               data: yValues
+            }]
+         },
+         legend: { display: false }
+      });
+
+      function generateData(value, i1, i2, step = 1) {
+         for (let x = i1; x <= i2; x += step) {
+            yValues.push(eval(value));
+            xValues.push(x);
+         }
+      }
+   </script>
+</body>
+
+</html>
