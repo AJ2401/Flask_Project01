@@ -1,4 +1,4 @@
-# Flask_Project01
+# Flask_Project
 In this project, I have developed a simple web application using Flask, HTML, CSS, and JavaScript. The web application has several pages, including a home page, sign-in page or sign-up page, and dashboard page. I have used an Excel file as a database to store user information, and implemented user authentication and authorization.
 
 #Execution Procedure 
