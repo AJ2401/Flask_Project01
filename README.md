@@ -1,12 +1,12 @@
 # Flask_Project01
-In this project, we have developed a simple web application using Flask, HTML, CSS, and JavaScript. The web application has several pages, including a home page, sign-in page, sign-up page, and dashboard page. We used an Excel file as a database to store user information, and implemented user authentication and authorization using session management. Overall, this project provides a good introduction to building web applications with Flask and basic web development technologies.
+In this project, I have developed a simple web application using Flask, HTML, CSS, and JavaScript. The web application has several pages, including a home page, sign-in page or sign-up page, and dashboard page. I have used an Excel file as a database to store user information, and implemented user authentication and authorization.
 
 #Execution Procedure 
 
 -- File Structure and Their Descriptions --
 
 
-. app.py is the main Flask application file that contains the routes and functionality for signing up, signing in, and logging out users.
+. app.py is the main Flask application file that contains the routes and functionality for signing up, signing in, and logging out users the root process for all other processes.
 
 
 . users.xlsx is the file where user data is stored in Excel format.
@@ -15,10 +15,10 @@ In this project, we have developed a simple web application using Flask, HTML, C
 . requirements.txt is a file that lists all the Python packages and their versions required to run the application.
 
 
-. templates is a directory that contains HTML templates for different pages of the application, including the home page, sign-in page, sign-up page, and dashboard page.
+. Templates is a directory that contains HTML templates for different pages of the application, including the home page, sign-in page, sign-up page, and dashboard page.
 
 
-. static is a directory that contains static assets like CSS and JavaScript files used in the HTML templates.
+. Static is a directory that contains static assets like CSS and JavaScript files used in the HTML templates.
 
 -- Execution Command --
 
